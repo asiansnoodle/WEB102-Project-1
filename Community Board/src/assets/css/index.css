@@ -1,0 +1,100 @@
+/* Root container styles */
+.root {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Align content from the top */
+  min-height: 100vh; /* Ensure it takes up the full viewport height */
+  background-color: aliceblue;
+  padding: 20px; /* Add some spacing around */
+}
+
+/* Title card styles */
+.title-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%; /* Ensures it scales properly */
+  margin: 0 auto 50px; /* Centers it horizontally and adds bottom spacing */
+}
+
+
+/* Title text styling */
+.title-card h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Shop card container */
+.shop-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevents image overflow */
+  width: 300px; /* Adjust width as needed */
+  text-align: center;
+  padding: 16px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin: 20px; /* Adds spacing between cards */
+}
+
+/* Hover effect */
+.shop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Shop image */
+.shop-image {
+  width: 100%;
+  height: 180px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image fills the space nicely */
+  border-radius: 8px;
+}
+
+/* Shop name */
+.shop-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 12px 0;
+}
+
+/* Button styling */
+.shop-card button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+.shop-card button:hover {
+  background-color: #e65c00;
+}
+
+/* Link styling */
+.shop-card a {
+  text-decoration: none; /* Remove underline */
+}
+
+/* Container for shop cards */
+.shops-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: center; /* Centers items in the container */
+  gap: 20px; /* Adds space between items */
+  padding: 20px;
+  max-width: 1200px; /* Prevents items from stretching too wide */
+  margin: 0 auto; /* Centers the container on the page */
+}
